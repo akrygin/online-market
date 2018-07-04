@@ -1,2 +1,2 @@
-# online-market
-Online market project
+# online-store
+Online store project
