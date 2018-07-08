@@ -1,0 +1,55 @@
+#parse( "./src/main/resources/templates/header.vm")
+<body>
+<div id="wrapper">
+    <!--Header Section-->
+    <div id="heading">
+        Главная
+    </div>
+
+    <header>
+        <ul class="header-section">
+            <li class="logo"><a href="#"><img src="images/logo.png" alt="Whitesquare logo"></a></li>
+            <li class="search">
+                <form name="search" action="#" method="get">
+                    <input type="text" name="q" placeholder="Search">
+                    <button type="submit">GO</button>
+                </form>
+            </li>
+            <li class="contacts">
+                <div class="time">
+                    Оформить заказ:
+                </div>
+                <div class="phone">
+                    0 800 20 70 20
+                </div>
+                <div class="time">
+                    Служба поддержки клиентов:
+                </div>
+                <div class="phone">
+                    0 800 20 70 30
+                </div>
+            </li>
+            <li class="shopping-cart">
+                <button>
+                    <img src="images/basket.png" alt="Корзина">
+                </button>
+            </li>
+        </ul>
+    </header>
+    <nav>
+        <ul class="top-menu">
+            <li class="active"><a href="#">All</a></li>
+            <li><a href="#">Apple</a></li>
+            <li><a href="#">Samsung</a></li>
+            <li><a href="#">LG</a></li>
+            <li><a href="#">Sony</a></li>
+            <li><a href="#">Huawei</a></li>
+        </ul>
+    </nav>
+    <!--Main Body-->
+    <section>
+        #parse( "./src/main/resources/templates/itemsList.vm")
+    </section>
+    <aside></aside>
+</div>
+</body>

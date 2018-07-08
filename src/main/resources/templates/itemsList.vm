@@ -1,0 +1,16 @@
+<div class="base">
+    #foreach($items in $itemsParts)
+        <ul class="base-row">
+            #foreach($item in $items)
+            <li>
+                <div class="item-container">
+                    <div class="image"><img src="$item.ImageURL"></div>
+                    <div class="producer" align="center">$item.Producer</div>
+                    <div class="name"><a href="items/$item.ItemURL">$item.Name</a></div>
+                    <div class="price" align="center">$item.Price  р.</div>
+                </div>
+            </li>
+            #end
+        </ul>
+    #end
+</div>

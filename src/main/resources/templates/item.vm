@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>$itemBean.Producer продукт</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/album.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar bg navbarHeader">
+        <div class="container">
+            <a href="../index.html"><img src="../images/logo.png" alt="Whitesquare logo"></a>
+            <div class="navbar-collapse justify-content-end" id="navbarsExampleDefault">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <div class="time">
+                            Оформить заказ:
+                        </div>
+                        <div class="phone">
+                            - // -
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="time">
+                            Служба поддержки клиентов:
+                        </div>
+                        <div class="phone">
+                            - // -
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-secondary btn-number">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <a class="btn btn-success btn-sm ml-3" href="#">
+                        <i class="fa fa-shopping-cart"></i> Cart
+                        <span class="badge badge-light">3</span>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar navbar-success bg-success box-shadow">
+        <div class="container d-flex justify-content-between">
+            <nav>
+                <ul class="top-menu">
+                    <li class="menu-item active btn" id="about-item">О Товаре</li>
+                    <li class="menu-item btn" id="characteristics-item">Характеристики</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main role="main">
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="section-item">
+                <div class="image-item"><img src=".$itemBean.ImageURL"></div>
+##                <div class="producer-item">$itemBean.Producer</div>
+                <div class="name-item"><h1><b>$itemBean.Name</b></h1></div>
+                <div class="info-item about-item">$itemBean.About</div>
+                <div class="info-item characteristics-item" style="display: none;">
+                    $itemBean.characteristics
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="text-muted">
+    <div class="container">
+        <p class="float-right">
+            <a href="#">Back to top</a>
+        </p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="../js/jquery.matchHeight-min.js"></script>
+<script src="../js/item-page.js"></script>
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../js/vendor/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/vendor/holder.min.js"></script>
+</body>
