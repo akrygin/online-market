@@ -1,7 +1,2 @@
-1. Change project structure to maven Web application
-2. Get success result and see correct start page using local tomcat
-3. Create jsp page for parser
-4. Add js for correct working of buttons on main page
-5. Modify pages for items, add tabs for overview and specifications on every item
-6. Commit and push results to GitHub
-7. Try to setup OpenShift hosting and deploy project 
+1. Commit and push results to GitHub
+2. Try to setup OpenShift hosting and deploy project 
